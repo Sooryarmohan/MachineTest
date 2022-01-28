@@ -21,6 +21,8 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
         initialSetup()
     }
+    
+   
     //MARK: - Initial Setup
     func initialSetup() {
         

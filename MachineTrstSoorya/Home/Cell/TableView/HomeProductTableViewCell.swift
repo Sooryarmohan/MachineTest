@@ -35,7 +35,7 @@ extension HomeProductTableViewCell : UICollectionViewDelegate, UICollectionViewD
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProductCollectionViewCell", for: indexPath) as! ProductCollectionViewCell
         
         //Border corerRadius SetUp
-        cell.layer.borderColor = UIColor.gray.cgColor
+        cell.layer.borderColor = UIColor.lightGray.cgColor
         cell.layer.cornerRadius = 5.0
         cell.layer.borderWidth = 1.0
         cell.products = product?[indexPath.item]
@@ -44,11 +44,11 @@ extension HomeProductTableViewCell : UICollectionViewDelegate, UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 25.0
+        return 30.0
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: self.productCollectionView.bounds.size.width/2.3, height: self.productCollectionView.bounds.size.height)
+        return CGSize(width: self.productCollectionView.bounds.size.width/2.2, height: self.productCollectionView.bounds.size.height)
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {

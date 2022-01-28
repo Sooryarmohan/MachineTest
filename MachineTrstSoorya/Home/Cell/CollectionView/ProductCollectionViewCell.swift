@@ -9,6 +9,8 @@ import UIKit
 
 class ProductCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var btnAdd: UIButton!
+    
     @IBOutlet weak var imgTruck: UIImageView!
     
     @IBOutlet weak var lblDesc: UILabel!
@@ -30,6 +32,8 @@ class ProductCollectionViewCell: UICollectionViewCell {
     
     //MARK: - Initial Setup
     func initialSetup() {
+        
+        self.btnAdd.layer.cornerRadius = 8.0
         
         if products?.is_express == true{
             imgTruck.isHidden = false

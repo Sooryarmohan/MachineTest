@@ -337,6 +337,13 @@
                                                                                         </attributedString>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
+                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="favourite" translatesAutoresizingMaskIntoConstraints="NO" id="DZk-fL-4Jg">
+                                                                                        <rect key="frame" x="198" y="10" width="20" height="20"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="height" constant="20" id="bGz-ua-HQ2"/>
+                                                                                            <constraint firstAttribute="width" constant="20" id="k0q-7F-N7u"/>
+                                                                                        </constraints>
+                                                                                    </imageView>
                                                                                 </subviews>
                                                                                 <constraints>
                                                                                     <constraint firstItem="3EO-xJ-T3b" firstAttribute="leading" secondItem="ftU-H0-XL4" secondAttribute="leading" id="0Vx-Vo-wOd"/>
@@ -348,6 +355,7 @@
                                                                                     <constraint firstAttribute="bottom" secondItem="hoi-8e-mMD" secondAttribute="bottom" constant="5" id="GfR-FM-ddC"/>
                                                                                     <constraint firstItem="ftU-H0-XL4" firstAttribute="top" secondItem="oFJ-1l-GxR" secondAttribute="top" constant="40" id="HJa-9E-55r"/>
                                                                                     <constraint firstItem="5M3-jb-iiy" firstAttribute="top" secondItem="XXD-iz-7fm" secondAttribute="bottom" constant="0.67000000000000004" id="HJa-ab-Gus"/>
+                                                                                    <constraint firstItem="DZk-fL-4Jg" firstAttribute="top" secondItem="oFJ-1l-GxR" secondAttribute="top" constant="10" id="HQu-xO-YKZ"/>
                                                                                     <constraint firstItem="ftU-H0-XL4" firstAttribute="leading" secondItem="oFJ-1l-GxR" secondAttribute="leading" constant="10" id="P98-mD-yJO"/>
                                                                                     <constraint firstItem="upY-fp-EnI" firstAttribute="leading" secondItem="ftU-H0-XL4" secondAttribute="leading" id="TD8-6c-aQL"/>
                                                                                     <constraint firstItem="upY-fp-EnI" firstAttribute="top" secondItem="ftU-H0-XL4" secondAttribute="bottom" constant="5" id="UMe-f8-q3o"/>
@@ -356,11 +364,13 @@
                                                                                     <constraint firstItem="hoi-8e-mMD" firstAttribute="centerX" secondItem="oFJ-1l-GxR" secondAttribute="centerX" id="g2T-LR-P3N"/>
                                                                                     <constraint firstItem="3EO-xJ-T3b" firstAttribute="top" secondItem="5M3-jb-iiy" secondAttribute="bottom" constant="1" id="gS8-ej-7Vf"/>
                                                                                     <constraint firstItem="XXD-iz-7fm" firstAttribute="top" secondItem="upY-fp-EnI" secondAttribute="bottom" constant="2" id="gUi-KV-oSs"/>
+                                                                                    <constraint firstAttribute="trailing" secondItem="DZk-fL-4Jg" secondAttribute="trailing" constant="30" id="vAc-a2-NbO"/>
                                                                                     <constraint firstItem="XXD-iz-7fm" firstAttribute="leading" secondItem="ftU-H0-XL4" secondAttribute="leading" constant="2" id="wXP-PN-j0p"/>
                                                                                 </constraints>
                                                                             </collectionViewCellContentView>
                                                                             <size key="customSize" width="248" height="297"/>
                                                                             <connections>
+                                                                                <outlet property="btnAdd" destination="hoi-8e-mMD" id="OiQ-Cd-3Bq"/>
                                                                                 <outlet property="imgOffer" destination="F2g-OA-gHs" id="syG-1V-EIe"/>
                                                                                 <outlet property="imgProduct" destination="sBZ-4F-83k" id="nKW-Hr-XPD"/>
                                                                                 <outlet property="imgTruck" destination="upY-fp-EnI" id="hEW-H3-hKa"/>
@@ -514,6 +524,7 @@
     <resources>
         <image name="Mouse" width="213.33332824707031" height="142.33332824707031"/>
         <image name="cart" width="21.666666030883789" height="20.333333969116211"/>
+        <image name="favourite" width="18.333333969116211" height="16"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="percent" catalog="system" width="128" height="121"/>
         <image name="person" catalog="system" width="128" height="117"/>
